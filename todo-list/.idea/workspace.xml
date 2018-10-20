@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="450af7c4-cef9-4a30-8830-04e5e1921812" name="Default Changelist" comment="Controller added.&#10;ToDoData - CRUD functionalities.&#10;Util package added - Mappings and ViewNames.&#10;JSTL taglibs added.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/academy/learnprogramming/controller/ToDoItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/academy/learnprogramming/model/TodoData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/academy/learnprogramming/util/Mappings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/academy/learnprogramming/util/ViewNames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/items_list.jsp" afterDir="false" />
+    <list default="true" id="450af7c4-cef9-4a30-8830-04e5e1921812" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/academy/learnprogramming/service/ToDoItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/academy/learnprogramming/service/ToDoItemServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cargo/configurations/tomcat9x/webapps/todo-list/META-INF/maven/academy.learnprogramming/todo-list/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cargo/configurations/tomcat9x/webapps/todo-list/META-INF/maven/academy.learnprogramming/todo-list/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cargo/configurations/tomcat9x/work/Tomcat/localhost/todo-list/org/apache/jsp/WEB_002dINF/view/welcome_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cargo/configurations/tomcat9x/work/Tomcat/localhost/todo-list/org/apache/jsp/WEB_002dINF/view/welcome_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-list-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/todo-list-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/academy/learnprogramming/config/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/learnprogramming/config/WebAppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/academy/learnprogramming/controller/ToDoItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/learnprogramming/controller/ToDoItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/academy/learnprogramming/model/TodoData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/academy/learnprogramming/model/TodoData.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,20 +72,21 @@
     <session id="-1082245361">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="1" />
+          <entry key="dummy" value="2" />
           <entry key="html" value="65" />
-          <entry key="java" value="2441" />
-          <entry key="jsp" value="284" />
+          <entry key="java" value="2890" />
+          <entry key="jsp" value="288" />
           <entry key="txt" value="285" />
           <entry key="xml" value="270" />
         </counts>
@@ -100,17 +94,17 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="65" />
-          <entry key="JAVA" value="2441" />
-          <entry key="JSP" value="284" />
-          <entry key="PLAIN_TEXT" value="286" />
+          <entry key="JAVA" value="2890" />
+          <entry key="JSP" value="288" />
+          <entry key="PLAIN_TEXT" value="287" />
           <entry key="XML" value="270" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="java" value="12" />
-          <entry key="jsp" value="5" />
+          <entry key="java" value="42" />
+          <entry key="jsp" value="6" />
           <entry key="kt" value="1" />
           <entry key="xml" value="2" />
         </counts>
@@ -118,8 +112,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="12" />
-          <entry key="JSP" value="5" />
+          <entry key="JAVA" value="42" />
+          <entry key="JSP" value="6" />
           <entry key="Kotlin" value="1" />
           <entry key="XML" value="2" />
         </counts>
@@ -135,61 +129,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/model/TodoData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-              <folding>
-                <element signature="method#ToDoData#0;class#ToDoData#0" />
-                <element signature="method#getItems#0;class#ToDoData#0" />
-                <element signature="method#removeItem#0;class#ToDoData#0" />
-                <element signature="method#getItem#0;class#ToDoData#0" />
-                <element signature="method#updateItem#0;class#ToDoData#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/controller/ToDoItemController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/service/ToDoItemService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="150">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/items_list.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/service/ToDoItemServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="132">
+              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/util/ViewNames.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/controller/ToDoItemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/util/Mappings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="342">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -221,7 +192,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/config/WebAppInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/DemoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/DemoServiceImpl.java" />
@@ -230,11 +200,14 @@
         <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/model/ToDoItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/model/ToDoData.java" />
         <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/util/Mappings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/controller/ToDoItemController.java" />
         <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/util/ViewNames.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/items_list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/model/TodoData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/service/ToDoItemService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/service/ToDoItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/controller/ToDoItemController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/academy/learnprogramming/config/WebAppInitializer.java" />
       </list>
     </option>
   </component>
@@ -268,10 +241,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="142" />
+    <option name="x" value="103" />
     <option name="y" value="23" />
-    <option name="width" value="1212" />
-    <option name="height" value="603" />
+    <option name="width" value="1256" />
+    <option name="height" value="597" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -280,6 +253,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -400,16 +376,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539889775736" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540020918658" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -479,7 +452,8 @@
       <workItem from="1539284697224" duration="753000" />
       <workItem from="1539508379787" duration="6584000" />
       <workItem from="1539713832646" duration="3826000" />
-      <workItem from="1539885395695" duration="3550000" />
+      <workItem from="1539885395695" duration="3885000" />
+      <workItem from="1539967983858" duration="3188000" />
     </task>
     <task id="LOCAL-00001" summary="Created new project.&#10;Spring MVC configured.">
       <created>1539285434586</created>
@@ -495,11 +469,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539717553971</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Controller added.&#10;ToDoData - CRUD functionalities.&#10;Util package added - Mappings and ViewNames.&#10;JSTL taglibs added.">
+      <created>1539889826917</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539889826917</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16714000" />
+    <option name="totallyTimeSpent" value="20237000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,10 +492,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="142" y="23" width="1212" height="603" extended-state="0" />
+    <frame x="103" y="23" width="1256" height="597" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49566725" visible="true" weight="0.25811967" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49566725" visible="true" weight="0.25288302" />
       <window_info id="Structure" order="1" sideWeight="0.5043328" side_tool="true" weight="0.25169492" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -522,20 +503,20 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5020243" side_tool="true" weight="0.26114082" />
       <window_info id="Web" order="7" sideWeight="0.5020243" side_tool="true" weight="0.26114082" />
-      <window_info anchor="bottom" id="Messages" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38956523" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38742393" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3275563" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32845187" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32681018" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32845187" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32582322" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32485324" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32845187" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.24933214" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -544,7 +525,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" show_stripe_button="false" weight="0.32858416" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.26432848" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.26302728" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,54 +561,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/controller/demoController.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/service/DemoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/config/WebAppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/service/DemoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/controller/DemoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/model/ToDoItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -645,6 +578,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/items_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/service/DemoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/service/DemoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/model/TodoData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#removeItem#0;class#TodoData#0" />
+            <element signature="method#getItem#0;class#TodoData#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/util/Mappings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -659,37 +625,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/controller/ToDoItemController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/config/WebAppInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="275">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/items_list.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/controller/DemoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="440">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/model/TodoData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/model/TodoItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+        <state relative-caret-position="222">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="method#ToDoData#0;class#ToDoData#0" />
-            <element signature="method#getItems#0;class#ToDoData#0" />
-            <element signature="method#removeItem#0;class#ToDoData#0" />
-            <element signature="method#getItem#0;class#ToDoData#0" />
-            <element signature="method#updateItem#0;class#ToDoData#0" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/service/ToDoItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/service/ToDoItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/academy/learnprogramming/controller/ToDoItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
